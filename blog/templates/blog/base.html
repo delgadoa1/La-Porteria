@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title%}
+        <title>Django About - {{ title }}</title>
+    {%else%}
+        <title>Django About</title>
+    {% endif %}
+
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
