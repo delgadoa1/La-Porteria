@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 """
 All views are what the user will see on the web page
@@ -8,15 +7,15 @@ All views are what the user will see on the web page
 
 posts = [
     {
-        "author": "Andres",
-        "title": "Blog Post 1",
-        "content": "First Post Content",
+        "author": "Andres Delgado",
+        "title": "Property 1",
+        "content": "Add description and pics of property 1",
         "date_posted": "Mar 2019"
     },
     {
-        "author": "John",
-        "title": "Blog Post 2",
-        "content": "Second Post Content",
+        "author": "Alex Delgado",
+        "title": "Property 2",
+        "content": "Add description and pics of property 2",
         "date_posted": "Mar 2019"
     }
 ]
@@ -30,4 +29,4 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'blog/about.html', {'title':'About'})      # What the user sees on the site/about page
+    return render(request, 'blog/about.html', {'title': 'About'})      # What the user sees on the site/about page
