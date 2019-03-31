@@ -29,9 +29,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# Make sure to add any new apps created to this list
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,3 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'         # Uses Bootstrap 4 templates with User Registration
+
+LOGIN_REDIRECT_URL = 'blog-home'            # Redirects users to Home Page after Login
+
+LOGIN_URL = 'login'      # Redirects django default user profile page to user login page, forcing a user to be logged in
