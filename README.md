@@ -1,7 +1,7 @@
 # La-Porteria
 Family Use Website for Rental Properties in Medellin
 
-A personal project for myself and my brother Alex to help him and my parents manage rental properties in the Medellin area. 
+A project for myself and my brother Alex to help our parents manage rental properties in the Medellin area. 
 
 They are finally living their own life free of the responsibility of taking care of their children.
 
