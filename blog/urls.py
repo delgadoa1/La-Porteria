@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views         # "." means current directory
+from . import views
 
 """
 These paths are what redirect the user to the correct view on the site. '' means the home page which is currently
