@@ -123,8 +123,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'         # Uses Bootstrap 4 templates with User Registration
 
-LOGIN_REDIRECT_URL = 'blog-home'            # Redirects users to Home Page after Login
 
+LOGIN_REDIRECT_URL = 'blog-home'            # Redirects users to Home Page after Login
 LOGIN_URL = 'login'      # Redirects django default user profile page to user login page, forcing a user to be logged in
+
