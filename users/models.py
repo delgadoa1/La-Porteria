@@ -10,8 +10,8 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):                # Thanks StackOverflow, this was causing a TypeError
+        super(Profile, self).save(*args, **kwargs)  # save() got an unexpected keyword argument 'force_insert'
 
         img = Image.open(self.image.path)
 

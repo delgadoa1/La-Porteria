@@ -134,3 +134,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'         # Uses Bootstrap 4 templates with Us
 LOGIN_REDIRECT_URL = 'blog-home'            # Redirects users to Home Page after Login
 LOGIN_URL = 'login'      # Redirects django default user profile page to user login page, forcing a user to be logged in
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
